@@ -39,14 +39,9 @@
       }
     },
     "./preview": {
-      "import": {
-        "types": "./dist/preview.d.ts",
-        "default": "./dist/preview.js"
-      },
-      "require": {
-        "types": "./dist/preview.d.cts",
-        "default": "./dist/preview.cjs"
-      }
+      "types": "./dist/index.d.ts",
+      "import": "./dist/preview.js",
+      "require": "./dist/preview.cjs"
     },
     "./package.json": "./package.json"
   },
@@ -55,6 +50,7 @@
   "types": "dist/index.d.ts",
   "files": [
     "dist/**/*",
+    "*.js",
     "README.md",
     "*.png",
     "!src/**/*"
